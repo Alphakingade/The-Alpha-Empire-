@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Alpha Empire</title>
+    <style>
+        /* Reset some default browser styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Header styles */
+        header {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 1.5em;
+            text-align: center;
+        }
+        header img {
+            width: 80px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        header h1 {
+            font-size: 2.2em;
+            margin-bottom: 0.2em;
+        }
+        header p {
+            font-size: 1.1em;
+        }
+        /* Navigation styles */
+        nav {
+            background-color: #eaeaea;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Content layout */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Section titles */
+        .section-title {
+            font-size: 1.8em;
+            color: #0073e6;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 0.2em;
+            margin-bottom: 0.5em;
+        }
+        /* Recent posts */
+        .recent-posts .post {
+            padding: 1em 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .recent-posts .post h3 {
+            font-size: 1.4em;
+            color: #0073e6;
+        }
+        /* Categories and other sections */
+        .categories .category, .about-me, .contact, .newsletter {
+            margin-top: 1.5em;
+            font-size: 1.1em;
+        }
+        /* Contact and social links */
+        .social-links a {
+            color: #0073e6;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: auto;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5em 0;
+            }
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="A_bold_logo_of_the_letters_A_and_E_interlocking_in.png" alt="The Alpha Empire Logo">
+    <h1>Welcome to The Alpha Empire</h1>
+    <p>Your go-to blog for helpful tips, articles, and courses on graphic design.</p>
+</header>
+
+<nav>
+    <a href="#recent-posts">Recent Posts</a>
+    <a href="#categories">Categories</a>
+    <a href="#about-me">About Me</a>
+    <a href="#contact">Contact</a>
+    <a href="#newsletter">Newsletter</a>
+</nav>
+
+<div class="content">
+    <!-- Recent Posts Section -->
+    <section id="recent-posts" class="recent-posts">
+        <h2 class="section-title">Recent Posts</h2>
+        <div class="post">
+            <h3>Understanding the Basics of Graphic Design</h3>
+            <img src="post-image1.jpg" alt="Graphic design basics" style="width:100%; max-width:600px; border-radius:5px;">
+            <p>Learn about the fundamental principles of graphic design and how to apply them to your projects.</p>
+        </div>
+        <div class="post">
+            <h3>Top Tools Every Graphic Designer Should Use</h3>
+            <img src="post-image2.jpg" alt="Design tools" style="width:100%; max-width:600px; border-radius:5px;">
+            <p>Discover the essential tools that every graphic designer needs for creating amazing designs.</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <h2 class="section-title">Categories</h2>
+        <div class="category">Design Principles</div>
+        <div class="category">Software Tutorials</div>
+        <div class="category">Design Inspiration</div>
+        <div class="category">Courses & Resources</div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="about-me">
+        <h2 class="section-title">About Me</h2>
+        <p>I'm Alpha King, a passionate graphic designer and educator, here to share my knowledge on design principles, software tools, and much more. Through this blog, I hope to provide valuable insights and resources to help fellow designers at all levels.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>If you'd like to get in touch or have any questions, feel free to reach out via social media or email.</p>
+        <div class="social-links">
+            <a href="https://wa.link/9nie6q" target="_blank">WhatsApp</a> |
+            <a href="https://www.facebook.com/owolabidavid.adebimpe.75?mibextid=ZbWKwL" target="_blank">Facebook</a>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section id="newsletter" class="newsletter">
+        <h2 class="section-title">Newsletter Signup</h2>
+        <p>Stay updated with the latest articles, design tips, and free courses. Sign up for our newsletter!</p>
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="Your email" required style="padding: 8px; width: 80%; max-width: 250px;">
+            <button type="submit" style="padding: 8px 12px; background-color: #0073e6; color: #fff; border: none; cursor: pointer;">Subscribe</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 The Alpha Empire. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
